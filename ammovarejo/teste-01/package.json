@@ -1,0 +1,22 @@
+{
+  "name": "ammovarejo",
+  "version": "1.0.0",
+  "description": "Teste para vaga Front-end na Ammovarejo",
+  "main": "",
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "author": "Antonio Marcos",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "connect": "^3.5.0",
+    "gulp-uglifycss": "^1.0.6",
+    "ejs": "^2.5.5",
+    "express": "^4.14.0",
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.3.0",
+    "gulp-watch": "^4.3.11",
+    "open": "^0.0.5"
+  }
+}

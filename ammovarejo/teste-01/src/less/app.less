@@ -1,0 +1,61 @@
+body        { .radial-gradient(@light-purple, @purple);
+    &, html { height: 100vh; text-align: center; position: relative; }
+}
+
+* { 
+    &, &:focus { outline: none; }
+}
+a           { color: desaturate(lighten(@purple, 30%), 20%); transition: color 0.2s ease;
+    &:hover { color: lighten(@purple, 50%); transition: color 0.2s ease; text-decoration: none; }
+    &:focus { color: lighten(@purple, 50%); text-decoration: none; }
+}
+
+.panel-login                    { width: 350px; }
+.panel-list                     { width: 500px; }
+.panel-default                  { text-align: left; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); border: none; .drop-shadow();
+    .panel-heading              { .gradient(desaturate(lighten(@purple, 40%), 20%), desaturate(lighten(@purple, 30%), 20%)); border: none; color: @white; .text-shadow(); }
+    .panel-body                 {
+        .form-control-feedback  { color: fade(desaturate(lighten(@purple, 40%), 50%), 50%); }
+        .lost-password          { padding-top: 8px; }
+    }
+}
+
+input[type] { background: desaturate(lighten(@purple, 80%), 20%);
+    &:focus { border-color: fade(@light-purple, 80%); box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px fade(@light-purple, 60%); outline: 0 none; }
+}
+
+.btn-purple               {
+    &, &:active, &:hover  { .gradient(desaturate(lighten(@purple, 40%), 20%), desaturate(lighten(@purple, 30%), 20%)); color: @white; border: none; }
+    &:focus               { outline: none; color: @white; }
+}
+
+.close-btn      { color: @white; transition: color 0.2s ease;
+    &:hover     { color: lighten(@purple, 10%); transition: color 0.2s ease; }
+}
+
+.table              { margin-top: 20px;
+    thead           {
+        tr          { 
+            th      { text-align: center; border-bottom-color: desaturate(lighten(@purple, 60%), 20%);
+                a   { color: lighten(@purple, 20%); text-decoration: none; transition: color 0.2s ease;
+                    &:hover { color: lighten(@purple, 50%); transition: color 0.2s ease; }
+                }
+            }
+        }
+    }
+    tbody       {
+        tr                   { background: @white; transition: background 0.2s ease;
+            &:nth-child(odd) { background: desaturate(lighten(@purple, 83%), 10%); transition: background 0.2s ease;}
+            &:hover          { background: saturate(lighten(@purple, 80%), 20%); transition: background 0.2s ease; }
+            td               { border-top-color: desaturate(lighten(@purple, 60%), 20%); }
+        }
+    }
+}
+
+.the-password    { font-size: 10px; float: right; color: fade(lighten(@purple, 15%), 40%); margin-top: 3px;
+    ul           { margin: 0; padding: 0;
+        li       { list-style: none; margin: 0; padding: 0;
+            span { font-weight: bold }
+        }
+    }
+}
