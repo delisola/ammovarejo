@@ -5,16 +5,14 @@ var matrix = [];
 var arString = [];
 
 function processData(input) {
-    var strInput = input.replace(/(\r\n\s|\s|\n|\r)/g, '');
+    var arInput = input.split('\n');   
     
-    n = strInput.slice(0, 1);
-    m = strInput.slice(1, 2);
-    strInput = strInput.slice(2);
-    arString = strInput.split('');
-    
-    for(i=0; i<n; i++){
-        matrix[i] = arString.splice(0, n);
-    }
+    n = parseInt(arInput[0]);
+    m = parseInt(arInput[1]);
+    arInput = arInput.slice(2);
+    matrix = arInput.map(function(val){
+        return val.replace(/(\r\n\s|\s|\n|\r)/g, '').split('');
+    });
     
     checkRegions();
     process.stdout.write(larger);
@@ -24,7 +22,7 @@ function checkRegions(){
     var size = 0;
     for(l=0; l<n; l++){
         for(c=0; c<m; c++){
-            if(matrix[l][c] == 1) size = countAreas(l, c);
+            if(matrix[l][c] == 1) size = countAreas(l, c); 
             if(size > larger) larger = size;  
         }
     }
