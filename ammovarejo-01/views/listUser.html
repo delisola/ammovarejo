@@ -1,0 +1,24 @@
+<div class="panel panel-default panel-list">
+    <div class="panel-heading">Lista de Usuários <a href="" ng-click="exit()"><i class="fa fa-times pull-right close-btn" data-toggle="tooltip" data-placement="left" title="Sair"></i></a></div>
+    <div class="panel-body">
+        <input type="text" class="form-control" name="search" ng-model="search" placeholder="Busca" /> 
+        <table class="table">
+            <thead>
+                <tr>
+                    <th><a href="" ng-click="orderListBy('user')">Usuário</a></th>
+                    <th><a href="" ng-click="orderListBy('name')">Nome</a></th>
+                    <th><a href="" ng-click="orderListBy('password')">Senha</a></th>
+                    <th><a href="" ng-click="orderListBy('permission')">Permissão</a></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="user in users | filter: search | orderBy: objectOrder:objectOrderUp">
+                    <td>{{user.user}}</td>
+                    <td>{{user.name}}</td>
+                    <td class="text-center">{{user.password}}</td>
+                    <td class="text-center">{{user.permission}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

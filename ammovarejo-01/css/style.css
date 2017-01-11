@@ -1,0 +1,18 @@
+body{background-color:#d06dd3;background:-moz-radial-gradient(center,ellipse cover,#d06dd3 0,#310f32 100%);background:-webkit-radial-gradient(center,ellipse cover,#d06dd3 0,#310f32 100%);background:radial-gradient(ellipse at center,#d06dd3 0,#310f32 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='@startColor',endColorstr='@endColor',GradientType=1)}
+body,body html{height:100vh;text-align:center;position:relative}*,*:focus{outline:0}
+a{color:#904892;transition:color .2s ease}a:hover{color:#d06dd3;transition:color .2s ease;text-decoration:none}
+a:focus{color:#d06dd3;text-decoration:none}.panel-login{width:350px}.panel-list{width:500px}
+.panel-default{text-align:left;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);border:0;-webkit-box-shadow:0 1px 2px 0 rgba(0,0,0,0.25);-moz-box-shadow:0 1px 2px 0 rgba(0,0,0,0.25);box-shadow:0 1px 2px 0 rgba(0,0,0,0.25)}
+.panel-default .panel-heading{background-color:#ad5eaf;background:-webkit-gradient(linear,left top,left bottom,from(#ad5eaf),to(#904892));background:-webkit-linear-gradient(top,#ad5eaf,#904892);background:-moz-linear-gradient(top,#ad5eaf,#904892);background:-ms-linear-gradient(top,#ad5eaf,#904892);background:-o-linear-gradient(top,#ad5eaf,#904892);border:0;color:#fff;text-shadow:0 1px 3px rgba(0,0,0,0.25)}
+.panel-default .panel-body .form-control-feedback{color:rgba(139,130,139,0.5)}.panel-default .panel-body .lost-password{padding-top:8px}
+input[type]{background:#f2e6f3}input[type]:focus{border-color:rgba(208,109,211,0.8);box-shadow:0 1px 1px rgba(0,0,0,0.075) inset,0 0 8px rgba(208,109,211,0.6);outline:0 none}
+.btn-purple,.btn-purple:active,.btn-purple:hover{background-color:#ad5eaf;background:-webkit-gradient(linear,left top,left bottom,from(#ad5eaf),to(#904892));background:-webkit-linear-gradient(top,#ad5eaf,#904892);background:-moz-linear-gradient(top,#ad5eaf,#904892);background:-ms-linear-gradient(top,#ad5eaf,#904892);background:-o-linear-gradient(top,#ad5eaf,#904892);color:#fff;border:0}
+.btn-purple:focus{outline:0;color:#fff}.close-btn{color:#fff;transition:color .2s ease}
+.close-btn:hover{color:#571b59;transition:color .2s ease}.table{margin-top:20px}.table thead tr th{text-align:center;border-bottom-color:#d0a2d1}
+.table thead tr th a{color:#7e2780;text-decoration:none;transition:color .2s ease}
+.table thead tr th a:hover{color:#d06dd3;transition:color .2s ease}.table tbody tr{background:#fff;transition:background .2s ease}
+.table tbody tr:nth-child(odd){background:#f9eff9;transition:background .2s ease}
+.table tbody tr:hover{background:#f9dffa;transition:background .2s ease}.table tbody tr td{border-top-color:#d0a2d1}
+.the-password{font-size:10px;float:right;color:rgba(107,33,109,0.4);margin-top:3px}
+.the-password ul{margin:0;padding:0}.the-password ul li{list-style:none;margin:0;padding:0}
+.the-password ul li span{font-weight:bold}
